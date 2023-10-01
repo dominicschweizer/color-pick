@@ -1,0 +1,49 @@
+<svg
+  viewBox="0 0 100 100"
+  width="200px"
+  height="200px"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <filter id="textureCircle">
+      <feImage [attr.href]="imageLink" result="texture-img" />
+      <feComposite
+        in2="SourceGraphic"
+        operator="in"
+        in="texture-img"
+        result="composite"
+      />
+      <feBlend in="SourceGraphic" in2="composite" mode="multiply" />
+    </filter>
+
+    <filter id="textureInnerCircle" x="0" y="0" width="100%" height="100%">
+      <feImage [attr.href]="imageLink2" result="texture-img" />
+      <feTile
+        in="texture-img"
+        x="50"
+        y="50"
+        width="100"
+        height="500"
+        result="tile"
+      ></feTile>
+      <feComposite
+        in2="SourceGraphic"
+        operator="in"
+        in="tile"
+        result="composite"
+      />
+    </filter>
+  </defs>
+
+  <g>
+    <g filter="url(#textureCircle)">
+      <circle cx="50" cy="50" r="50" fill="white" />
+    </g>
+  </g>
+
+  <g>
+    <g filter="url(#textureInnerCircle)">
+      <rect width="30" height="80" x="35" y="10" fill="white" />
+    </g>
+  </g>
+</svg>

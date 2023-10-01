@@ -1,0 +1,8 @@
+<h1>Hello World {{ test }}</h1>
+
+<app-svg-display [svgConfig]="config"></app-svg-display>
+
+<ul>
+  <li *ngFor="let n of names">{{ n }}</li>
+</ul>
+<app-controls (eventEmitter)="logEvent($event)"></app-controls>
