@@ -1,8 +1,15 @@
-<h1>Hello World {{ test }}</h1>
-
-<app-svg-display [svgConfig]="config"></app-svg-display>
-
-<ul>
-  <li *ngFor="let n of names">{{ n }}</li>
-</ul>
-<app-controls (eventEmitter)="logEvent($event)"></app-controls>
+<div class="main">
+  <h1>Configurator</h1>
+  <app-svg-display [svgConfig]="config"></app-svg-display>
+  <p></p>
+  <h2>Softshell</h2>
+  <app-controls
+    [imageURLs]="URLSamplesCircle"
+    (eventEmitter)="changeCircle($event)"
+  ></app-controls>
+  <h2>Gurtband</h2>
+  <app-controls
+    [imageURLs]="URLSamplesRect"
+    (eventEmitter)="changeRect($event)"
+  ></app-controls>
+</div>

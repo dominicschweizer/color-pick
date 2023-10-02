@@ -1,0 +1,26 @@
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+li {
+  margin: 0 0.5em;
+}
+
+img {
+  border: 5px solid white;
+}
+
+img:hover {
+  border-color: gray;
+}
+
+.selected {
+  border-color: rgb(43, 9, 195);
+}
+
+img:hover.selected {
+  border-color: rgb(43, 9, 195);
+}

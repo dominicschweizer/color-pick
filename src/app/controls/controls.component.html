@@ -1,4 +1,11 @@
-<button (click)="setcolor('red')">red</button>
-<button (click)="setcolor('green')">green</button>
-<p *ngIf="color === undefined">please pick a color</p>
-<p *ngIf="color !== undefined">you picked color {{ color }}</p>
+<ul>
+  <li *ngFor="let image of imageURLs">
+    <img
+      [ngClass]="selected === image ? 'selected' : ''"
+      src="{{ image }}"
+      height="50px"
+      width="50px"
+      (click)="selectItem(image)"
+    />
+  </li>
+</ul>
