@@ -1,5 +1,7 @@
+<h2 (click)="toogleSource()">Toogle me!</h2>
 <ng-container *ngIf="svgConfig">
   <svg
+    *ngIf="source === 'svg'"
     viewBox="250 150 250 350"
     width="200px"
     height="200px"
@@ -69,6 +71,72 @@
           opacity="NaN"
           stroke="#000"
           fill="#fff"
+        />
+      </g>
+    </g>
+  </svg>
+  <svg
+    *ngIf="source === 'picture'"
+    viewBox="0 0 100 100"
+    width="200px"
+    height="200px"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <filter id="softshell" x="0" y="0" width="100%" height="100%">
+        <feImage
+          [attr.href]="svgConfig.imageLink"
+          result="texture-img"
+          y="-20"
+          width="150"
+          height="150"
+        />
+        <feComposite
+          in2="SourceGraphic"
+          operator="in"
+          in="texture-img"
+          result="composite"
+        />
+        <feBlend in="SourceGraphic" in2="composite" mode="multiply" />
+      </filter>
+
+      <filter id="band" x="0" y="0" width="100%" height="100%">
+        <feImage
+          [attr.href]="svgConfig.imageLink2"
+          result="texture-img"
+          width="25"
+          height="25"
+          preserveAspectRatio="none"
+        />
+        <feTile
+          in="texture-img"
+          width="200%"
+          height="200%"
+          result="tile"
+        ></feTile>
+        <feComposite
+          in2="SourceGraphic"
+          operator="in"
+          in="tile"
+          result="composite"
+        />
+        <feBlend in="SourceGraphic" in2="composite" mode="multiply" />
+      </filter>
+    </defs>
+
+    <g>
+      <g filter="url(#softshell)">
+        <image
+          href="assets/configurator_small_2_softshell.png"
+          height="100"
+          width="100"
+        />
+      </g>
+      <g filter="url(#band)">
+        <image
+          href="assets/configurator_small_2_band.png"
+          height="100"
+          width="100"
         />
       </g>
     </g>

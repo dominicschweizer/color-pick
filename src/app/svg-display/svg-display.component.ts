@@ -6,5 +6,9 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
   styleUrls: ['./svg-display.component.css'],
 })
 export class SvgDisplayComponent {
+  source: 'svg' | 'picture' = 'svg';
+  toogleSource() {
+    this.source = this.source === 'svg' ? 'picture' : 'svg';
+  }
   @Input() svgConfig: { imageLink: string; imageLink2: string } | undefined;
 }

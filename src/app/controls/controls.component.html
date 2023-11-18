@@ -1,11 +1,12 @@
 <ul>
   <li *ngFor="let image of imageURLs">
     <img
-      [ngClass]="selected === image ? 'selected' : ''"
-      src="{{ image }}"
+      [ngClass]="selected === image[0] ? 'selected' : ''"
+      src="{{ image[0] }}"
       height="50px"
       width="50px"
-      (click)="selectItem(image)"
+      (click)="selectItem(image[0])"
+      title="{{ image[1] }}"
     />
   </li>
 </ul>

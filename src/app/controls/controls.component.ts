@@ -10,7 +10,7 @@ export class ControlsComponent implements OnInit {
     if (this.imageURLs === undefined) {
       return;
     }
-    this.selectItem(this.imageURLs[0]);
+    this.selectItem(this.imageURLs[0][0]);
   }
   selectItem(image: string) {
     this.eventEmitter.emit(image);
@@ -18,6 +18,6 @@ export class ControlsComponent implements OnInit {
   }
   color: string | undefined;
   @Output() eventEmitter: EventEmitter<string> = new EventEmitter();
-  @Input() imageURLs: string[] | undefined;
+  @Input() imageURLs: [string, string][] | undefined;
   selected: string | undefined;
 }

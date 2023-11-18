@@ -1,5 +1,9 @@
 # Configurator
 
+## Useful Links
+
+https://stackoverflow.com/questions/54605976/apply-a-texture-to-an-image-in-svg
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
 
 ## Development server
