@@ -2,12 +2,12 @@
   <h1>Configurator</h1>
   <app-svg-display [svgConfig]="config"></app-svg-display>
   <p></p>
-  <h2>Softshell</h2>
+  <h2>Softshell: {{ pickedSoftshell }}</h2>
   <app-controls
     [imageURLs]="URLSoftShell"
     (eventEmitter)="changeCircle($event)"
   ></app-controls>
-  <h2>Gurtband</h2>
+  <h2>Gurtband: {{ pickedColor }}</h2>
   <app-controls
     [imageURLs]="URLGurtband"
     (eventEmitter)="changeRect($event)"
