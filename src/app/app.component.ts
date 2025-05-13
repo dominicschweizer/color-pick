@@ -17,13 +17,26 @@ export class AppComponent {
   }
 
   URLSoftShell: [string, string][] = [
-    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i254d6489e9f1006f/version/1672902072/image.jpg',
-    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/id5e5dfb6967b403d/version/1677503077/image.jpg',
-    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i9c9b5f76f29aa50c/version/1677503077/image.jpg',
-    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i70eaf0f2093b3e12/version/1677503077/image.jpg',
-    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i94bd9e3d0f5efa9f/version/1677503077/image.jpg',
-    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i8bba466ac996b2ae/version/1657199620/image.jpg',
-    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i05969cbfaacf84b6/version/1651990073/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/id4d2f54738312e07/version/1742365278/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/iddb1bee841bd3645/version/1727506261/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i905903e93db72608/version/1741674999/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i254d6489e9f1006f/version/1741674999/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/icb84a24cbb695b43/version/1741674999/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i1f731c614db29f29/version/1741674999/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i64cd10887771a7d6/version/1741674999/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i43acd960620eb922/version/1741675021/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i4201d1447f638724/version/1741675021/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i2e25e0a40df215b1/version/1741675021/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i9c9b5f76f29aa50c/version/1741675021/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i063018a905308263/version/1741675021/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/if11bb4cd96348f3a/version/1741675021/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i32a9fb5e0cddf68a/version/1741675021/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i28e236dd4d2788a6/version/1741675021/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i45f09f6d32541e0a/version/1741675021/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i9bdfafd78024f008/version/1741675021/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i8b7c459beb43b329/version/1741675021/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/idf0dc5ca3199459d/version/1741675011/image.jpg',
+    'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sdd37b24955066016/image/i4a446fc0056b1cb7/version/1742365278/image.jpg',
   ].map((url) => [url, '']);
 
   private colorCodes = [
