@@ -1,15 +1,22 @@
 <div class="main">
   <h1>Configurator</h1>
-  <app-svg-display [svgConfig]="config"></app-svg-display>
+  <section style="display:flex; flex-direction: row; ">
+    <div>
+      <h2>Produkt</h2>
+      <app-svg-display [svgConfig]="config"></app-svg-display>
+    </div>
+    <div>
+      <h2>Softshell: {{ pickedSoftshell }}</h2>
+      <app-controls
+        [imageURLs]="URLSoftShell"
+        (eventEmitter)="changeCircle($event)"
+      ></app-controls>
+      <h2>Gurtband: {{ pickedColor }}</h2>
+      <app-controls
+        [imageURLs]="URLGurtband"
+        (eventEmitter)="changeRect($event)"
+      ></app-controls>
+    </div>
+  </section>
   <p></p>
-  <h2>Softshell: {{ pickedSoftshell }}</h2>
-  <app-controls
-    [imageURLs]="URLSoftShell"
-    (eventEmitter)="changeCircle($event)"
-  ></app-controls>
-  <h2>Gurtband: {{ pickedColor }}</h2>
-  <app-controls
-    [imageURLs]="URLGurtband"
-    (eventEmitter)="changeRect($event)"
-  ></app-controls>
 </div>
