@@ -1,7 +1,20 @@
 .main {
   display: flex;
-  width: 100vw;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.configurator {
+  display: flex;
+  flex-direction: row;
+}
+.configurator h2{
+  text-align: center;
+}
+@media (max-width: 1250px) {
+  .configurator {
+    flex-direction: column;
+  }
 }
