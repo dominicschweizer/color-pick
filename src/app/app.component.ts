@@ -20,7 +20,7 @@ export class AppComponent {
     this.config.imageLink2 = image[0];
     this.pickedColor = image[1];
   }
-  colors2: [string, string][] = ['christmas-2', 'christmas', 'clouds', 'knots', "knots2","knots3","knots4",  'mosaik', 'mosaik2', 'snowflakes', 'stars'].map(s => [`assets/colors2/${s}.PNG`, s])
+  colors2: [string, string][] = ['christmas', 'deer', 'knots', 'mosaik', 'pattern', 'stars', 'winter'].map(s => [`assets/colors/${s}-small.png`, s])
   URLSoftShell: [string, string][] = [
     ...this.colors2,
     
