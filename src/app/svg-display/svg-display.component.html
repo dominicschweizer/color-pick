@@ -74,13 +74,10 @@
       </g>
     </g>
   </svg>
-  <svg
-    *ngIf="source === 'picture'"
-    viewBox="0 0 100 100"
+  
+  <svg viewBox="0 0 100 100"
     width="400px"
-    height="400px"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+    height="400px">
     <defs>
       <filter id="softshell" x="0" y="0" width="100%" height="100%">
         <feImage
@@ -122,46 +119,31 @@
         <feBlend in="SourceGraphic" in2="composite" mode="multiply" />
       </filter>
     </defs>
-
     <g>
       <g filter="url(#softshell)">
         <image
-          href="assets/harness-softshell.png"
+          href="assets/new-models/softshell.png"
           height="100"
           width="100"
         />
       </g>
       <g filter="url(#band)">
         <image
-          href="assets/harness-belt.png"
-          height="100"
-          width="100"
-        />
-      </g>
-    </g>
-    
-  </svg>
-  <svg viewBox="0 0 100 100"
-    width="400px"
-    height="400px">
-    <g>
-      <g filter="url(#softshell)">
-        <image
-          href="assets/layered-models/softshell.png"
-          height="100"
-          width="100"
-        />
-      </g>
-      <g filter="url(#band)">
-        <image
-          href="assets/layered-models/belt.png"
+          href="assets/new-models/belt.png"
           height="100"
           width="100"
         />
       </g>
       <g>
         <image
-          href="assets/layered-models/buckles-seams.png"
+          href="assets/new-models/buckles.png"
+          height="100"
+          width="100"
+        />
+      </g>
+      <g filter="url(#softshell)">
+        <image
+          href="assets/new-models/background.png"
           height="100"
           width="100"
         />
